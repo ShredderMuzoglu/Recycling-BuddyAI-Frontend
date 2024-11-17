@@ -1,0 +1,70 @@
+<meta charset= "UTF-8">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<title>Recycling BuddyAI</title>
+<link rel= "stylesheet" href="styles.css"
+</head>
+<header>
+<h1>Welcome to Recycling BuddyAI </h1>
+
+<ul>
+<li><a href= "#about">About</a></li>
+<li><a href= "#upload">Upload Waste</a></li>
+<li><a href= "#results">Results</a></li>
+</ul>
+</nav>
+
+<h2>About Recycling BuddyAI</h2>
+<p>Recycling BudyAI is an application that helps students identify which materials found around campus are recyclable and which ones aren't so students can be provided with the appropriate information on how to properly dispose of them.</p>
+</section>
+
+<h2>Upload Your Waste Item</h2>
+<form id= "uploadForm" enctype="multipart/form-data">
+<label for= "fileInput">Choose an Image</label>
+<input type= "file" id= "fileInput" name="fileInput" accept= "Image/*" required />
+<button type="submit">Check Recyclability</button>
+</form>
+</section>
+
+</head>
+<body>
+    <header>
+        <h1>EcoSnap Recycling Results</h1>
+    </header>
+
+    <main>
+        <section id="scan-result">
+            <h2>Scan Results</h2>
+            <img id="scanned-image" src="" alt="Scanned item">
+            <p>Identified item: <span id="item-type"></span></p>
+            <p>Recyclable: <span id="recyclable-status"></span></p>
+        </section>
+
+        <section id="recycling-instructions">
+            <h2>How to Recycle</h2>
+            <ol id="recycling-steps">
+                <!-- Steps will be dynamically inserted here -->
+            </ol>
+        </section>
+
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <p id="info-text"></p>
+        </section>
+
+        <section id="user-feedback">
+            <h2>Confirm Identification</h2>
+            <p>Is this identification correct?</p>
+            <button id="confirm-yes">Yes</button>
+            <button id="confirm-no">No</button>
+        </section>
+
+        <button id="scan-again">Scan Another Item</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recycling BuddyAI. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
