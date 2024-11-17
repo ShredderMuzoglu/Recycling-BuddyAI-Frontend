@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+}
+
+header {
+    background-color: #00796b; /* Teal color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+#data-input {
+    margin-bottom: 20px;
+}
+
+#results {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
